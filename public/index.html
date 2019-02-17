@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--React Stuff -->
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css"
+    />
+
+    <title>React App</title>
+    <!--React Stuff -->
+
+    <!-- <title>Custom Materialize Theme</title> -->
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <!-- CHART-->
+    <!-- <canvas id="myChart" width="400" height="400"></canvas> -->
+
+    <!--Import jQuery before materialize.js-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-2.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!--CANVAS -->
+    <!-- <canvas id="myChart" width="400" height="400"></canvas> -->
+
+   
+    <!-- <script src="canvasjs/dist/canvasjs.js"></script> -->
+    <!--DOCUMENT-->
+
+    <script>
+      setTimeout(() => {
+        $(document).ready(() => {
+          $('.button-collapse').sideNav();
+          Materialize.toast('Page loading!', 3000, 'blue rounded');
+        
+        });
+
+        //Approve Comments
+        $('.approve').click(e => {
+          Materialize.toast('Comment Approved', 3000, 'green');
+          e.preventDefault();
+        });
+
+        //Deny Comments
+        $('.deny').click(e => {
+          Materialize.toast('Comment Denied', 3000, 'red');
+          e.preventDefault();
+        });
+
+        // Add Todos
+        $('#todo-form').submit(e => {
+          console.log($('#todo').val());
+          const output = `<li class="collection-item">
+            <div>${$('#todo').val()}
+              <a href="#!" class="secondary-content delete">
+                <i class="material-icons">close</i>
+              </a>
+            </div>
+           </li>`;
+
+          e.preventDefault();
+          if ($('#todo').val() == '') {
+            Materialize.toast(
+              'Can not be empty. Please add a Todo',
+              3000,
+              'red'
+            );
+          } else {
+            $('.todos').append(output);
+            Materialize.toast('Todo added', 3000, 'green');
+          }
+          e.preventDefault();
+        });
+
+         // Remove Todos
+         $('.todos').on('click', '.delete', (e) => {
+           $(this).parent().parent().remove();
+           
+           Materialize.toast('Todo Removed', 3000, 'green');
+           e.preventDefault();
+         })
+   //Init MOdal 
+   $('.modal').modal()
+ 
+      }, 1000);
+   
+   
+    </script>
+
+
+  </body>
+  <footer id="section-footer" class="section-footer blue darken-2 white-text center">
+      <p>Youlive Hello Admin Pannel copyright &copy; 2019</p>
+      </footer>
+</html>
