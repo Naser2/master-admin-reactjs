@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import M from 'materialize-css/dist/css/materialize.min.css'
 import $ from 'jquery/dist/jquery.js';
+import {Link} from 'react-router-dom'
 
 export default class Nav extends Component {
 
@@ -13,28 +14,28 @@ export default class Nav extends Component {
         <nav className="blue darken-2">
           <div className="container">
             <div className="nav-wrapper">
-              <a href="!#" className="brand-logo">YouLive</a>
-              <a href="!#" data-activates="side-nav" className="button-collapse show-on-large right">
+              <a href="/" className="brand-logo">YouLive</a>
+              <a href="/" data-activates="side-nav" className="button-collapse show-on-large right">
                 <i className="material-icons">menu</i>
               </a>
               <ul className="right hide-on-med-and-down">
                 <li className="active">
-                  <a href="index.html" alt="#">Dashboard</a>
+                  <a href="/" alt="#">Dashboard</a>
                 </li>
                 <li>
-                  <a href="videos.html">Chanels</a>
+                  <a href="/Chanels">Chanels</a>
                 </li>
                 <li>
-                  <a href="posts.html">Posts</a>
+                  <a href="/posts" className="Nav_link">Posts</a>
                 </li>
                 <li>
-                  <a href="categories.html">Categories</a>
+                  <a href="/categories">Categories</a>
                 </li>
                 <li>
-                  <a href="comments.html">Comments</a>
+                  <a href="/comments">Comments</a>
                 </li>
                 <li>
-                  <a href="users.html">Users</a>
+                  <a href="/users">Users</a>
                 </li>
               </ul>
               {/* Side nav */}
@@ -56,20 +57,20 @@ export default class Nav extends Component {
                   </div>
                 </li>
                 <li>
-                  <a href="index.html">
+                  <a href="/">
                     <i className="material-icons">dashboard</i> Dashboard</a>
                 </li>
                 <li>
-                  <a href="posts.html">Posts</a>
+                  <a href="/posts">Posts</a>
                 </li>
                 <li>
-                  <a href="categories.html">Categories</a>
+                  <a href="/categories">Categories</a>
                 </li>
                 <li>
-                  <a href="comments.html">Comments</a>
+                  <a href="/comments">Comments</a>
                 </li>
                 <li>
-                  <a href="users.html">Users</a>
+                  <a href="/users">Users</a>
                 </li>
                 <li>
                   <div className="divider"></div>
@@ -78,7 +79,7 @@ export default class Nav extends Component {
                   <a className="subheader" href="!#">Account Controls</a>
                 </li>
                 <li>
-                  <a href="login.html" className="waves-effect">Logout</a>
+                  <a href="/login" className="waves-effect">Logout</a>
                 </li>
               </ul>
             </div>

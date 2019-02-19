@@ -12,7 +12,7 @@ export default class LatestComments extends Component {
           </li>
           <li className="collection-item avatar">
             <img src="img/mike.jpg" alt="" className="circle" />
-            <span className="title">John Doe</span>
+            <span className="title">Mike Blossom</span>
             <p className="truncate">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Quibusdam molestiae soluta.
@@ -27,7 +27,7 @@ export default class LatestComments extends Component {
           </li>
           <li className="collection-item avatar">
             <img src="img/person1.jpg" alt="" className="circle" />
-            <span className="title">Stephane Calibs</span>
+            <span className="title">Stephane Calib</span>
             <p className="truncate">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Quibusdam molestiae soluta.
