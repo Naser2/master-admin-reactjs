@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import ButtonsAndIcons from './ButtonsAndIcons.';
 import PostModal from './PostModal';
 import Counter from './Counter';
+import Nav from './Nav';
 
 export default class Categories extends Component {
 
@@ -44,26 +45,24 @@ export default class Categories extends Component {
 
     return (
         <Fragment>
-        
+         <Nav/>
             <section className="section section-categories grey lighten-4">
               <div className="container">
                 <div className="row">
                   <div className="col s12">
                     <div className="card">
                       <div className="card-content">
-                        <span className="card-title">Posts</span>
+                        <span className="card-title">Categories</span>
                         <table className="striped">
                           <thead>
                             <tr>
                               <th>Title</th>
-                              <th>Category</th>
                               <th>Date Created</th>
                               <th />
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
-                              <td>Post One</td>
                               <td>Web Development</td>
                               <td>Feb 1, 2019</td>
                               <td>
@@ -76,7 +75,6 @@ export default class Categories extends Component {
                               </td>
                             </tr>
                             <tr>
-                              <td>Post Two</td>
                               <td>Graphic Design</td>
                               <td>Jan 2, 2019</td>
                               <td>
@@ -89,7 +87,6 @@ export default class Categories extends Component {
                               </td>
                             </tr>
                             <tr>
-                              <td>Post Three</td>
                               <td>Web Development</td>
                               <td>Jan 3, 2019</td>
                               <td>
@@ -102,7 +99,6 @@ export default class Categories extends Component {
                               </td>
                             </tr>
                             <tr>
-                              <td>Post Four</td>
                               <td>Tech Gadgets</td>
                               <td>Jan 5, 2019</td>
                               <td>
@@ -115,7 +111,6 @@ export default class Categories extends Component {
                               </td>
                             </tr>
                             <tr>
-                              <td>Post Five</td>
                               <td>Graphic Design</td>
                               <td>Jan 6, 2019</td>
                               <td>
@@ -128,9 +123,7 @@ export default class Categories extends Component {
                               </td>
                             </tr>
                             <tr>
-                              <td>Post Six</td>
-                              <td>Web Development</td>
-                              <td>Jan 7, 2019</td>
+                              <td>Other</td>         <td>Jan 7, 2019</td>
                               <td>
                                 <a
                                   href="/details"

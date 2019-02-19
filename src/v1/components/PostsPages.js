@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import PostModal from './PostModal';
 import ButtonsAndIcons from './ButtonsAndIcons.';
+import Nav from './Nav';
 
 export default class PostsPages extends Component {
 
-  componentDidMount(props){
+  componentDidMount(){
     // this.props
   }
   render() {
@@ -39,6 +40,7 @@ export default class PostsPages extends Component {
   </div>)
     return (
       <div>
+        <Nav />
         <section class="section section-posts grey lighten-4">
             <div class="container">
               <div class="row">

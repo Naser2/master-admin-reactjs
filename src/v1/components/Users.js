@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import Nav from './Nav';
 
 export default class Users extends Component {
   render() {
@@ -49,7 +50,9 @@ export default class Users extends Component {
     );
 
     return (
-      <section className="section section-users grey lighten-4">
+      <div>
+      <Fragment><Nav /></Fragment>
+     <Fragment><section className="section section-users grey lighten-4">
         <div className="container">
           <div className="row">
             <div className="col s12">
@@ -205,7 +208,7 @@ export default class Users extends Component {
           {action};
           {userModal}
         </div>
-      </section>
+      </section></Fragment></div>
     );
   }
 }

@@ -16,3 +16,19 @@
   transform: translateX(-50%) !important;
   font-size: 4.1rem !important;
 }
+
+.section-login{
+  margin-top: 100px;
+  margin-bottom: 220px;
+}
+.btn-extended{
+  display: block;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+
+}
+
+.formbtn-red {
+  float: right
+}

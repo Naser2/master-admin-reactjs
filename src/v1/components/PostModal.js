@@ -5,7 +5,7 @@ export default class PostModal extends Component {
 
 
 postModal = () => {
-     return  <div id="post-modal" className="modal">
+     return  (<div id="post-modal" className="modal">
        <div className="modal-content">
          <h4>Add Post</h4>
          <form>
@@ -32,7 +32,7 @@ postModal = () => {
            <a href="#!" className="modal-action modal-close btn blue white-text">Submit</a>
          </div>
        </div>
-     </div>
+     </div>)
       }
 
   render() {

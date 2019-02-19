@@ -3,7 +3,7 @@ import Todos from './Todos';
 import Footer from './Footer';
 import PostModal from './PostModal';
 
-export default class PostsTodods extends Component {
+export default class RecentPosts extends Component {
   render() {
     return (
       <section className="section section-recent">
@@ -25,7 +25,7 @@ export default class PostsTodods extends Component {
                       <td>Post One</td>
                       <td>Web Development</td>
                       <td>
-                        <a href="details.html" className="btn blue lighten-2">
+                        <a href="details" className="btn blue lighten-2">
                           Details
                         </a>
                       </td>
@@ -34,7 +34,7 @@ export default class PostsTodods extends Component {
                       <td>Post Two</td>
                       <td>Graphic Design</td>
                       <td>
-                        <a href="details.html" className="btn blue lighten-2">
+                        <a href="details" className="btn blue lighten-2">
                           Details
                         </a>
                       </td>
@@ -43,7 +43,7 @@ export default class PostsTodods extends Component {
                       <td>Post Three</td>
                       <td>Mobile Development</td>
                       <td>
-                        <a href="details.html" className="btn blue lighten-2">
+                        <a href="details" className="btn blue lighten-2">
                           Details
                         </a>
                       </td>

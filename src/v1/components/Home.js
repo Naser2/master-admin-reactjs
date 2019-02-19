@@ -4,8 +4,8 @@ import Counter from './Counter';
 import Stats from './Stats';
 import Graph from './Graph';
 import ButtonsAndIcons from './ButtonsAndIcons.';
-import PostsTodods from './PostsTodods';
 import Footer from './Footer';
+import RecentPosts from './RecentPosts';
 
 
 export default class Home extends Component {
@@ -15,11 +15,11 @@ export default class Home extends Component {
    const footer  = <Footer />
     return (
       <div>
-        {/* <Nav /> */}
+        <Nav />
         <Counter />
         <Stats />
         <Graph />
-        <PostsTodods />
+        <RecentPosts />
         <ButtonsAndIcons />
         {postModal}
         {/* {footer} */}

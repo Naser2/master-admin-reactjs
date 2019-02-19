@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import Nav from './Nav';
 
 export default class Comments extends Component {
   
@@ -7,6 +8,7 @@ export default class Comments extends Component {
 
     return (
       <Fragment>
+        <Nav/>
         <section className="section section-comments grey lighten-4">
           <div className="container">
             <div className="row">
